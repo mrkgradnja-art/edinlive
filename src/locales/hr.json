@@ -1,0 +1,172 @@
+{
+  "hero": {
+    "title": "Vaš Poslovni Partner",
+    "subtitle": "Premium Web Dizajn, Razvoj & AI Integracija",
+    "cta": "Pogledaj Pakete",
+    "description": "Pretvaranje ideja u izvanredna digitalna iskustva"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Prikaz izvrsnosti u digitalnoj inovaciji",
+    "viewSite": "Posjeti Stranicu"
+  },
+  "skills": {
+    "title": "Stručnost",
+    "subtitle": "Sveobuhvatna digitalna rješenja",
+    "webDesign": {
+      "title": "Web Dizajn",
+      "items": ["UI/UX Dizajn", "Responzivni Dizajn", "Branding"]
+    },
+    "webDevelopment": {
+      "title": "Web Razvoj",
+      "items": ["Frontend Razvoj", "Backend Razvoj", "Full Stack Rješenja"]
+    },
+    "aiDevelopment": {
+      "title": "AI Razvoj",
+      "items": ["AI Integracija", "Strojno Učenje", "Automatizacija"]
+    },
+    "aiLearning": {
+      "title": "AI Učenje/Podučavanje",
+      "items": ["Programi Obuke", "Radionice", "Konzultacije"]
+    },
+    "seo": {
+      "title": "SEO Optimizacija",
+      "items": ["Tehnički SEO", "Sadržajni SEO", "Analitika"]
+    },
+    "ecommerce": {
+      "title": "E-Commerce Rješenja",
+      "items": ["Online Trgovine", "Integracija Plaćanja", "Upravljanje Zalihama"]
+    }
+  },
+  "packages": {
+    "title": "Servisni Paketi",
+    "subtitle": "Odaberite Savršeno Rješenje za Vaše Potrebe",
+    "essential": {
+      "name": "Osnovni",
+      "price": "€299",
+      "features": [
+        "Web Dizajn & Razvoj",
+        "Responzivni Dizajn",
+        "Osnovno SEO Postavljanje",
+        "3 Revizije",
+        "1 Mjesec Podrške"
+      ],
+      "cta": "Započni"
+    },
+    "professional": {
+      "name": "Profesionalni",
+      "price": "€999",
+      "features": [
+        "Full Stack Razvoj",
+        "AI Integracija",
+        "Napredni SEO",
+        "Optimizacija Performansi",
+        "5 Revizija",
+        "3 Mjeseca Podrške"
+      ],
+      "cta": "Započni"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "€1,999",
+      "features": [
+        "Kompletno Rješenje",
+        "Prilagođeni AI Razvoj",
+        "SEO + Strategija Sadržaja",
+        "AI Obuka/Radionice",
+        "Neograničene Revizije",
+        "6 Mjeseci Podrške"
+      ],
+      "cta": "Započni"
+    },
+    "modal": {
+      "title": "Upit za Paket",
+      "name": "Puno Ime",
+      "email": "Email Adresa",
+      "phone": "Telefon",
+      "message": "Dodatna Poruka (Opcionalno)",
+      "paymentMethod": "Način Plaćanja",
+      "stripe": "Kreditna/Debitna Kartica",
+      "paypal": "PayPal",
+      "submit": "Nastavi na Plaćanje",
+      "processing": "Obrađuje se...",
+      "success": "Plaćanje Uspješno!",
+      "error": "Plaćanje Neuspješno. Molimo pokušajte ponovno.",
+      "step1": {
+        "title": "Kontakt Informacije",
+        "subtitle": "Molimo unesite vaše kontakt podatke"
+      },
+      "step2": {
+        "title": "Detalji Projekta",
+        "subtitle": "Recite mi o vašem projektu",
+        "descriptionLabel": "Opis Projekta",
+        "placeholder": "Opišite vaš projekt detaljno..."
+      },
+      "step3": {
+        "title": "Način Plaćanja",
+        "subtitle": "Odaberite željeni način plaćanja"
+      },
+      "success": {
+        "title": "Upit Poslan!",
+        "message1": "Hvala vam na interesu za",
+        "message2": "paket.",
+        "message3": "Kontaktirat ću vas u najkraćem roku na navedeni email i telefon."
+      },
+      "next": "Dalje",
+      "back": "Nazad",
+      "submitInquiry": "Pošalji Upit",
+      "close": "Zatvori",
+      "validation": {
+        "nameRequired": "Ime je obavezno",
+        "emailRequired": "Email je obavezan",
+        "emailInvalid": "Nevažeći email",
+        "phoneRequired": "Telefon je obavezan",
+        "messageRequired": "Detalji projekta su obavezni",
+        "paymentRequired": "Molimo odaberite način plaćanja",
+        "submitFailed": "Slanje neuspješno. Molimo pokušajte ponovno."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontaktirajte Me",
+    "subtitle": "Razgovarajmo o Vašem Projektu",
+    "email": "Email",
+    "phone": "Telefon",
+    "location": "Lokacija",
+    "followMe": "Pratite Me",
+    "sendMessage": "Pošaljite Poruku",
+    "form": {
+      "name": "Ime",
+      "email": "Email",
+      "message": "Poruka",
+      "submit": "Pošalji Poruku",
+      "sending": "Šalje se...",
+      "success": "Poruka uspješno poslana!",
+      "error": "Neuspješno slanje poruke. Molimo pokušajte ponovno."
+    },
+    "social": {
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter/X",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "footer": {
+    "copyright": "© 2012-2025 Edin Live. Sva prava pridržana.",
+    "madeWith": "Napravljeno s"
+  },
+  "common": {
+    "mostPopular": "Najpopularniji",
+    "placeholders": {
+      "name": "Vaše ime",
+      "email": "vas.email@primjer.com",
+      "message": "Recite mi o vašem projektu..."
+    }
+  },
+  "success": {
+    "title": "Plaćanje Uspješno!",
+    "message": "Hvala vam na kupnji. Primio sam vaš upit i kontaktirat ću vas uskoro.",
+    "redirect": "Preusmjereni ćete biti na početnu stranicu za nekoliko sekundi..."
+  }
+}
+

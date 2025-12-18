@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Inquiry {
+  id            String   @id @default(cuid())
+  packageId    String
+  packageName  String
+  name         String
+  email        String
+  message      String?
+  questions    Json     // Store package-specific questions
+  paymentMethod String  // "stripe" | "paypal"
+  paymentId    String?
+  amount       Float
+  currency     String   @default("USD")
+  status       String   @default("pending") // "pending" | "paid" | "completed"
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  createdAt DateTime @default(now())
+}
+

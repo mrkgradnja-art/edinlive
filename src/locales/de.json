@@ -1,0 +1,172 @@
+{
+  "hero": {
+    "title": "Ihr Geschäftspartner",
+    "subtitle": "Premium Web-Design, Entwicklung & KI-Integration",
+    "cta": "Pakete Ansehen",
+    "description": "Ideen in außergewöhnliche digitale Erlebnisse verwandeln"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Exzellenz in digitaler Innovation präsentieren",
+    "viewSite": "Website Besuchen"
+  },
+  "skills": {
+    "title": "Expertise",
+    "subtitle": "Umfassende digitale Lösungen",
+    "webDesign": {
+      "title": "Web-Design",
+      "items": ["UI/UX Design", "Responsives Design", "Branding"]
+    },
+    "webDevelopment": {
+      "title": "Web-Entwicklung",
+      "items": ["Frontend-Entwicklung", "Backend-Entwicklung", "Full-Stack-Lösungen"]
+    },
+    "aiDevelopment": {
+      "title": "KI-Entwicklung",
+      "items": ["KI-Integration", "Maschinelles Lernen", "Automatisierung"]
+    },
+    "aiLearning": {
+      "title": "KI-Lernen/Lehren",
+      "items": ["Schulungsprogramme", "Workshops", "Beratung"]
+    },
+    "seo": {
+      "title": "SEO-Optimierung",
+      "items": ["Technisches SEO", "Content SEO", "Analytik"]
+    },
+    "ecommerce": {
+      "title": "E-Commerce-Lösungen",
+      "items": ["Online-Shops", "Zahlungsintegration", "Bestandsverwaltung"]
+    }
+  },
+  "packages": {
+    "title": "Servicepakete",
+    "subtitle": "Wählen Sie die perfekte Lösung für Ihre Bedürfnisse",
+    "essential": {
+      "name": "Essential",
+      "price": "€299",
+      "features": [
+        "Web-Design & Entwicklung",
+        "Responsives Design",
+        "Grundlegende SEO-Einrichtung",
+        "3 Überarbeitungen",
+        "1 Monat Support"
+      ],
+      "cta": "Loslegen"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "€999",
+      "features": [
+        "Full-Stack-Entwicklung",
+        "KI-Integration",
+        "Erweiterte SEO",
+        "Leistungsoptimierung",
+        "5 Überarbeitungen",
+        "3 Monate Support"
+      ],
+      "cta": "Loslegen"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "€1,999",
+      "features": [
+        "Komplette Lösung",
+        "Maßgeschneiderte KI-Entwicklung",
+        "SEO + Content-Strategie",
+        "KI-Schulung/Workshops",
+        "Unbegrenzte Überarbeitungen",
+        "6 Monate Support"
+      ],
+      "cta": "Loslegen"
+    },
+    "modal": {
+      "title": "Paket-Anfrage",
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefon",
+      "message": "Zusätzliche Nachricht (Optional)",
+      "paymentMethod": "Zahlungsmethode",
+      "stripe": "Kredit-/Debitkarte",
+      "paypal": "PayPal",
+      "submit": "Zur Zahlung",
+      "processing": "Wird verarbeitet...",
+      "success": "Zahlung erfolgreich!",
+      "error": "Zahlung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "step1": {
+        "title": "Kontaktinformationen",
+        "subtitle": "Bitte geben Sie Ihre Kontaktdaten an"
+      },
+      "step2": {
+        "title": "Projektdetails",
+        "subtitle": "Erzählen Sie mir von Ihrem Projekt",
+        "descriptionLabel": "Projektbeschreibung",
+        "placeholder": "Beschreiben Sie Ihr Projekt im Detail..."
+      },
+      "step3": {
+        "title": "Zahlungsmethode",
+        "subtitle": "Wählen Sie Ihre bevorzugte Zahlungsmethode"
+      },
+      "success": {
+        "title": "Anfrage Gesendet!",
+        "message1": "Vielen Dank für Ihr Interesse am",
+        "message2": "Paket.",
+        "message3": "Ich werde Sie so schnell wie möglich unter der angegebenen E-Mail-Adresse und Telefonnummer kontaktieren."
+      },
+      "next": "Weiter",
+      "back": "Zurück",
+      "submitInquiry": "Anfrage Senden",
+      "close": "Schließen",
+      "validation": {
+        "nameRequired": "Name ist erforderlich",
+        "emailRequired": "E-Mail ist erforderlich",
+        "emailInvalid": "Ungültige E-Mail",
+        "phoneRequired": "Telefon ist erforderlich",
+        "messageRequired": "Projektdetails sind erforderlich",
+        "paymentRequired": "Bitte wählen Sie eine Zahlungsmethode",
+        "submitFailed": "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt Aufnehmen",
+    "subtitle": "Lassen Sie uns über Ihr Projekt sprechen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "followMe": "Folgen Sie Mir",
+    "sendMessage": "Nachricht Senden",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "submit": "Nachricht Senden",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet!",
+      "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    },
+    "social": {
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter/X",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "footer": {
+    "copyright": "© 2012-2025 Edin Live. Alle Rechte vorbehalten.",
+    "madeWith": "Erstellt mit"
+  },
+  "common": {
+    "mostPopular": "Beliebteste",
+    "placeholders": {
+      "name": "Ihr Name",
+      "email": "ihre.email@beispiel.com",
+      "message": "Erzählen Sie mir von Ihrem Projekt..."
+    }
+  },
+  "success": {
+    "title": "Zahlung Erfolgreich!",
+    "message": "Vielen Dank für Ihren Kauf. Ich habe Ihre Anfrage erhalten und werde Sie in Kürze kontaktieren.",
+    "redirect": "Sie werden in wenigen Sekunden zur Startseite weitergeleitet..."
+  }
+}
+
