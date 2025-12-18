@@ -10,7 +10,6 @@ A modern, luxury portfolio website built with Next.js 14, featuring premium web 
 - 🎭 **Smooth Animations** - Framer Motion for beautiful transitions
 - 📱 **Fully Responsive** - Mobile-first design
 - 🔍 **SEO Optimized** - Complete SEO setup with metadata and structured data
-- 🗄️ **Database** - PostgreSQL with Prisma ORM
 
 ## Tech Stack
 
@@ -18,8 +17,6 @@ A modern, luxury portfolio website built with Next.js 14, featuring premium web 
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
 - **i18n**: react-i18next
-- **Database**: PostgreSQL
-- **ORM**: Prisma
 - **Email**: Nodemailer
 
 ## Getting Started
@@ -27,7 +24,6 @@ A modern, luxury portfolio website built with Next.js 14, featuring premium web 
 ### Prerequisites
 
 - Node.js 18+ 
-- PostgreSQL database
 - Email account (for notifications)
 
 ### Installation
@@ -50,7 +46,6 @@ cp .env.example .env
 
 Edit `.env` and add your configuration:
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/edinlive?schema=public"
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=your_email@gmail.com
@@ -58,13 +53,7 @@ EMAIL_PASS=your_app_password
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
-4. Set up the database:
-```bash
-npx prisma generate
-npx prisma db push
-```
-
-5. Run the development server:
+4. Run the development server:
 ```bash
 npm run dev
 ```
@@ -83,7 +72,6 @@ EdinLive/
 │   ├── components/       # React components
 │   ├── lib/              # Utilities and services
 │   └── locales/          # Translation files
-├── prisma/               # Database schema
 ├── public/               # Static assets
 └── package.json
 ```
@@ -94,10 +82,6 @@ EdinLive/
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
-- `npm run db:generate` - Generate Prisma client
-- `npm run db:push` - Push schema to database
-- `npm run db:migrate` - Run database migrations
-- `npm run db:studio` - Open Prisma Studio
 
 ## Email Setup
 
