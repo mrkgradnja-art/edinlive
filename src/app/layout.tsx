@@ -35,10 +35,10 @@ const getMetadataBase = () => {
 export const metadata: Metadata = {
   metadataBase: getMetadataBase(),
   title: {
-    default: 'Edin Live - Luxury Web Solutions',
+    default: 'Edin Live - Luxury Web Solutions | Premium Web Design & Development',
     template: '%s | Edin Live',
   },
-  description: 'Premium Web Design, Development & AI Integration Services. Expert in React, Next.js, TypeScript, and AI Development. Transform your business with luxury web solutions.',
+  description: 'Premium Web Design, Development & AI Integration Services. Expert in React, Next.js, TypeScript, and AI Development. Transform your business with luxury web solutions. Professional web design, custom web development, e-commerce solutions, SEO optimization, and AI integration services.',
   keywords: [
     'web design',
     'web development',
@@ -112,6 +112,12 @@ export const metadata: Metadata = {
   classification: 'Web Development Services',
 }
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -119,6 +125,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta name="facebook-domain-verification" content="u1itb2puzukgfh81ce1vpzebbdrq1n" />
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
+      </head>
       <body className={`${inter.variable} ${playfair.variable} ${montserrat.variable} font-sans bg-luxury-black text-luxury-text antialiased loading`} suppressHydrationWarning>
         <LoadingScreen />
         <I18nProvider>
