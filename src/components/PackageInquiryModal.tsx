@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X, ArrowRight, ArrowLeft, CheckCircle, Mail, Phone, MessageSquare, CreditCard } from 'lucide-react'
 import Image from 'next/image'
 import { playButtonSound } from '@/lib/sound'
-import { AircashIcon, RevolutIcon, WiseIcon, CryptoIcon, PayPalIcon } from './PaymentIcons'
+import { AircashIcon, RevolutIcon, WiseIcon, CryptoIcon } from './PaymentIcons'
 
 interface PackageInquiryModalProps {
   packageData: {
@@ -26,7 +26,6 @@ const paymentMethods = [
   { id: 'revolut', name: 'Revolut', Icon: RevolutIcon },
   { id: 'wise', name: 'Wise', Icon: WiseIcon },
   { id: 'crypto', name: 'Crypto', Icon: CryptoIcon },
-  { id: 'paypal', name: 'PayPal', Icon: PayPalIcon },
 ]
 
 export default function PackageInquiryModal({ packageData, onClose }: PackageInquiryModalProps) {

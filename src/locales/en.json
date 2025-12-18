@@ -8,7 +8,15 @@
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "Showcasing Excellence in Digital Innovation",
-    "viewSite": "Visit Site"
+    "viewSite": "Visit Site",
+    "projects": {
+      "shillworks": "Premium microjobs platform with automatic payouts",
+      "collabora": "Collaboration platform for modern teams and affiliates",
+      "goAmico": "Hotels and Restaurants with Verified Review system",
+      "borsa": "Online store for T-shirts, print on demand and much more",
+      "mrElectric": "Professional electrical services website",
+      "fixSleep": "Smart alarm app that helps you wake up refreshed based on sleep cycles"
+    }
   },
   "skills": {
     "title": "Expertise",
@@ -86,9 +94,7 @@
       "phone": "Phone",
       "message": "Additional Message (Optional)",
       "paymentMethod": "Payment Method",
-      "stripe": "Credit/Debit Card",
-      "paypal": "PayPal",
-      "submit": "Proceed to Payment",
+      "submit": "Submit Inquiry",
       "processing": "Processing...",
       "success": "Payment Successful!",
       "error": "Payment Failed. Please try again.",

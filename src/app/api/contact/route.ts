@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import nodemailer from 'nodemailer'
+import { getContactFormEmailTemplate, getPackageInquiryEmailTemplate } from '@/lib/emailTemplates'
 
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
@@ -24,6 +25,9 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Check if this is a package inquiry (message contains "Package:" and "Payment Method:")
+    const isPackageInquiry = message.includes('Package:') && message.includes('Payment Method:')
+    
     // Save to database (with error handling for database issues)
     try {
       await prisma.contact.create({
@@ -42,24 +46,50 @@ export async function POST(request: NextRequest) {
     // Send email (with error handling for email issues)
     try {
       if (process.env.EMAIL_HOST && process.env.EMAIL_USER && process.env.EMAIL_PASS) {
-        await transporter.sendMail({
-          from: process.env.EMAIL_USER,
-          to: 'info@edin.live',
-          subject: `New Contact Form Submission from ${name}`,
-          html: `
-            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-              <h2 style="color: #d4af37;">New Contact Form Submission</h2>
-              <p><strong>Name:</strong> ${name}</p>
-              <p><strong>Email:</strong> ${email}</p>
-              ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
-              <p><strong>Message:</strong></p>
-              <p style="background: #f5f5f5; padding: 15px; border-radius: 5px; white-space: pre-wrap;">${message}</p>
-              <p style="color: #666; font-size: 12px; margin-top: 20px;">
-                This message was sent from the contact form on edin.live
-              </p>
-            </div>
-          `,
-        })
+        if (isPackageInquiry) {
+          // Parse package inquiry data
+          const packageMatch = message.match(/Package:\s*(.+?)(?:\n|$)/m)
+          const priceMatch = message.match(/Price:\s*(.+?)(?:\n|$)/m)
+          const projectDetailsMatch = message.match(/Project Details:\s*([\s\S]+?)(?:\n\nPayment Method:|$)/m)
+          const paymentMethodMatch = message.match(/Payment Method:\s*(.+?)(?:\n|$)/m)
+          
+          const packageName = packageMatch ? packageMatch[1].trim() : 'Unknown Package'
+          const packagePrice = priceMatch ? priceMatch[1].trim() : 'N/A'
+          const projectDetails = projectDetailsMatch ? projectDetailsMatch[1].trim() : 'No details provided'
+          const paymentMethod = paymentMethodMatch ? paymentMethodMatch[1].trim() : 'Not specified'
+          
+          const emailTemplate = getPackageInquiryEmailTemplate({
+            packageName,
+            packagePrice,
+            name,
+            email,
+            phone: phone || 'Not provided',
+            projectDetails,
+            paymentMethod,
+          })
+          
+          await transporter.sendMail({
+            from: process.env.EMAIL_USER,
+            to: 'info@edin.live',
+            subject: `New Package Inquiry: ${packageName} - ${name}`,
+            html: emailTemplate,
+          })
+        } else {
+          // Regular contact form
+          const emailTemplate = getContactFormEmailTemplate({
+            name,
+            email,
+            phone: phone || undefined,
+            message,
+          })
+          
+          await transporter.sendMail({
+            from: process.env.EMAIL_USER,
+            to: 'info@edin.live',
+            subject: `New Contact Form Submission from ${name}`,
+            html: emailTemplate,
+          })
+        }
       } else {
         console.warn('Email configuration missing, skipping email send')
       }

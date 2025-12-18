@@ -8,7 +8,15 @@
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "Prikaz izvrsnosti u digitalnoj inovaciji",
-    "viewSite": "Posjeti Stranicu"
+    "viewSite": "Posjeti Stranicu",
+    "projects": {
+      "shillworks": "Premium platforma za mikropošlove s automatskim isplatama",
+      "collabora": "Platforma za suradnju za moderne timove i partnere",
+      "goAmico": "Hoteli i restorani s verificiranim sustavom recenzija",
+      "borsa": "Online trgovina za majice, print on demand i još mnogo toga",
+      "mrElectric": "Profesionalna web stranica za električne usluge",
+      "fixSleep": "Pametna aplikacija za buđenje koja pomaže da se probudite osvježeni na temelju ciklusa spavanja"
+    }
   },
   "skills": {
     "title": "Stručnost",
@@ -86,9 +94,7 @@
       "phone": "Telefon",
       "message": "Dodatna Poruka (Opcionalno)",
       "paymentMethod": "Način Plaćanja",
-      "stripe": "Kreditna/Debitna Kartica",
-      "paypal": "PayPal",
-      "submit": "Nastavi na Plaćanje",
+      "submit": "Pošalji Upit",
       "processing": "Obrađuje se...",
       "success": "Plaćanje Uspješno!",
       "error": "Plaćanje Neuspješno. Molimo pokušajte ponovno.",

@@ -27,31 +27,11 @@
 Make sure you have configured:
 
 - [ ] `DATABASE_URL` - PostgreSQL connection string
-- [ ] `STRIPE_SECRET_KEY` - Stripe secret key
-- [ ] `STRIPE_PUBLISHABLE_KEY` - Stripe publishable key
-- [ ] `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` - Same as above (for client)
-- [ ] `PAYPAL_CLIENT_ID` - PayPal client ID
-- [ ] `PAYPAL_CLIENT_SECRET` - PayPal client secret
-- [ ] `PAYPAL_MODE` - "sandbox" or "live"
-- [ ] `NEXT_PUBLIC_PAYPAL_CLIENT_ID` - Same as PAYPAL_CLIENT_ID (for client)
 - [ ] `EMAIL_HOST` - SMTP host (e.g., smtp.gmail.com)
 - [ ] `EMAIL_PORT` - SMTP port (usually 587)
 - [ ] `EMAIL_USER` - Your email address
 - [ ] `EMAIL_PASS` - Your email password or app password
 - [ ] `NEXT_PUBLIC_SITE_URL` - Your site URL (http://localhost:3000 for dev)
-
-## Testing Payments
-
-### Stripe Test Mode
-- Use test card: `4242 4242 4242 4242`
-- Any future expiry date
-- Any 3-digit CVC
-- Use Stripe CLI for webhooks: `stripe listen --forward-to localhost:3000/api/payments/webhook`
-
-### PayPal Sandbox
-- Create sandbox accounts in PayPal Developer Dashboard
-- Use sandbox buyer account for testing
-- Set `PAYPAL_MODE=sandbox`
 
 ## Common Issues
 
@@ -63,11 +43,6 @@ Make sure you have configured:
 - For Gmail: Enable 2FA and use App Password
 - Check firewall/security settings
 - Verify SMTP credentials
-
-### Payment Issues
-- Ensure API keys are correct
-- Check webhook endpoint is accessible
-- Verify environment variables are set
 
 ## Next Steps
 

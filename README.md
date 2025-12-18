@@ -6,7 +6,6 @@ A modern, luxury portfolio website built with Next.js 14, featuring premium web 
 
 - 🎨 **Luxury Dark Theme** - Elegant dark design with gold accents
 - 🌍 **Multi-Language Support** - English, Croatian, and German
-- 💳 **Payment Integration** - Stripe and PayPal support
 - 📧 **Email Notifications** - Automated email system for inquiries
 - 🎭 **Smooth Animations** - Framer Motion for beautiful transitions
 - 📱 **Fully Responsive** - Mobile-first design
@@ -21,7 +20,6 @@ A modern, luxury portfolio website built with Next.js 14, featuring premium web 
 - **i18n**: react-i18next
 - **Database**: PostgreSQL
 - **ORM**: Prisma
-- **Payments**: Stripe, PayPal
 - **Email**: Nodemailer
 
 ## Getting Started
@@ -30,8 +28,6 @@ A modern, luxury portfolio website built with Next.js 14, featuring premium web 
 
 - Node.js 18+ 
 - PostgreSQL database
-- Stripe account (for payments)
-- PayPal account (for payments)
 - Email account (for notifications)
 
 ### Installation
@@ -55,13 +51,6 @@ cp .env.example .env
 Edit `.env` and add your configuration:
 ```env
 DATABASE_URL="postgresql://user:password@localhost:5432/edinlive?schema=public"
-STRIPE_SECRET_KEY=sk_test_...
-STRIPE_PUBLISHABLE_KEY=pk_test_...
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-PAYPAL_CLIENT_ID=your_paypal_client_id
-PAYPAL_CLIENT_SECRET=your_paypal_client_secret
-PAYPAL_MODE=sandbox
-NEXT_PUBLIC_PAYPAL_CLIENT_ID=your_paypal_client_id
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=your_email@gmail.com
@@ -110,23 +99,6 @@ EdinLive/
 - `npm run db:migrate` - Run database migrations
 - `npm run db:studio` - Open Prisma Studio
 
-## Payment Setup
-
-### Stripe
-
-1. Create a Stripe account at [stripe.com](https://stripe.com)
-2. Get your API keys from the dashboard
-3. Add them to `.env`
-4. Set up webhook endpoint: `https://yourdomain.com/api/payments/webhook`
-5. Use Stripe CLI for local testing: `stripe listen --forward-to localhost:3000/api/payments/webhook`
-
-### PayPal
-
-1. Create a PayPal developer account
-2. Create an app and get Client ID and Secret
-3. Add them to `.env`
-4. Set `PAYPAL_MODE` to `sandbox` for testing or `live` for production
-
 ## Email Setup
 
 For Gmail:
@@ -172,8 +144,7 @@ Update `DATABASE_URL` in your deployment environment.
 
 ### Service Packages
 - Three pricing tiers
-- Package selection modal
-- Integrated payment forms
+- Package inquiry modal with payment method selection
 
 ### Contact Section
 - Contact form

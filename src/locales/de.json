@@ -8,7 +8,15 @@
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "Exzellenz in digitaler Innovation präsentieren",
-    "viewSite": "Website Besuchen"
+    "viewSite": "Website Besuchen",
+    "projects": {
+      "shillworks": "Premium-Mikrojobs-Plattform mit automatischen Auszahlungen",
+      "collabora": "Kollaborationsplattform für moderne Teams und Partner",
+      "goAmico": "Hotels und Restaurants mit verifiziertem Bewertungssystem",
+      "borsa": "Online-Shop für T-Shirts, Print-on-Demand und vieles mehr",
+      "mrElectric": "Professionelle Website für Elektrodienstleistungen",
+      "fixSleep": "Intelligente Wecker-App, die Ihnen hilft, erholt aufzuwachen basierend auf Schlafzyklen"
+    }
   },
   "skills": {
     "title": "Expertise",
@@ -86,9 +94,7 @@
       "phone": "Telefon",
       "message": "Zusätzliche Nachricht (Optional)",
       "paymentMethod": "Zahlungsmethode",
-      "stripe": "Kredit-/Debitkarte",
-      "paypal": "PayPal",
-      "submit": "Zur Zahlung",
+      "submit": "Anfrage Senden",
       "processing": "Wird verarbeitet...",
       "success": "Zahlung erfolgreich!",
       "error": "Zahlung fehlgeschlagen. Bitte versuchen Sie es erneut.",

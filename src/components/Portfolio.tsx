@@ -9,42 +9,42 @@ const projects = [
   {
     name: 'Shillworks',
     url: 'https://shillworks.com',
-    description: 'Premium web platform showcasing innovative solutions',
+    descriptionKey: 'portfolio.projects.shillworks',
     tech: ['React', 'TypeScript', 'Next.js', 'HTML', 'CSS', 'PostgreSQL', 'Prisma'],
     image: '/images/shillworks.png',
   },
   {
     name: 'Collabora',
     url: 'https://collaboranow.com',
-    description: 'Collaboration platform for modern teams',
+    descriptionKey: 'portfolio.projects.collabora',
     tech: ['React', 'TypeScript', 'Next.js', 'HTML', 'CSS', 'PostgreSQL', 'Prisma'],
     image: '/images/collabora.png',
   },
   {
     name: 'Go Amico',
     url: 'https://goamico.com',
-    description: 'Social networking and community platform',
+    descriptionKey: 'portfolio.projects.goAmico',
     tech: ['React', 'TypeScript', 'Next.js', 'HTML', 'CSS', 'PostgreSQL', 'Prisma'],
     image: '/images/goamico.png',
   },
   {
     name: 'Borsa',
     url: 'https://borsa.com.hr',
-    description: 'Financial news and market analysis platform',
+    descriptionKey: 'portfolio.projects.borsa',
     tech: ['React', 'TypeScript', 'Next.js', 'HTML', 'CSS', 'PostgreSQL', 'Prisma'],
     image: '/images/borsa.png',
   },
   {
     name: 'Mr Electric',
     url: 'https://mr-electric.hr',
-    description: 'Professional electrical services website',
+    descriptionKey: 'portfolio.projects.mrElectric',
     tech: ['React', 'TypeScript', 'Next.js', 'HTML', 'CSS', 'PostgreSQL', 'Prisma'],
     image: '/images/mrelectric.png',
   },
   {
     name: 'Fix Sleep',
     url: 'https://www.fixsleep.app/',
-    description: 'Smart alarm app that helps you wake up refreshed based on sleep cycles',
+    descriptionKey: 'portfolio.projects.fixSleep',
     tech: ['React', 'TypeScript', 'Next.js', 'HTML', 'CSS', 'PostgreSQL', 'Prisma'],
     image: '/images/fixsleep.png',
   },
@@ -112,7 +112,7 @@ export default function Portfolio() {
                     {project.name}
                   </h3>
                   <p className="text-luxury-text-muted mb-4 text-sm leading-relaxed font-montserrat">
-                    {project.description}
+                    {t(project.descriptionKey)}
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">

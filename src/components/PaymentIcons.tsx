@@ -28,10 +28,3 @@ export const CryptoIcon = ({ className }: { className?: string }) => (
   </svg>
 )
 
-export const PayPalIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 120 80" className={className} fill="none">
-    <rect width="120" height="80" rx="8" fill="#0070BA" />
-    <text x="60" y="50" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold" fontFamily="Arial, sans-serif">PayPal</text>
-  </svg>
-)
-
