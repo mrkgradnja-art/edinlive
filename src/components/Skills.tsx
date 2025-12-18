@@ -104,7 +104,8 @@ export default function Skills() {
                             console.warn(`Translation for skills.${category.key}.items is not an array:`, items)
                             return null
                           }
-                          return items.map((item: string, itemIndex: number) => (
+                          // Type assertion: we know it's an array of strings from the translation files
+                          return (items as string[]).map((item: string, itemIndex: number) => (
                             <motion.li
                               key={itemIndex}
                               initial={{ opacity: 0, x: -20 }}

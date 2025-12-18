@@ -108,7 +108,8 @@ export default function Packages() {
                               console.warn(`Translation for packages.${pkg.featuresKey} is not an array:`, features)
                               return null
                             }
-                            return features.map((feature: string, featureIndex: number) => (
+                            // Type assertion: we know it's an array of strings from the translation files
+                            return (features as string[]).map((feature: string, featureIndex: number) => (
                               <motion.li
                                 key={featureIndex}
                                 initial={{ opacity: 0, x: -20 }}

@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
         data: {
           name,
           email,
-          phone: phone || null,
+          ...(phone ? { phone } : {}),
           message,
         },
       })
