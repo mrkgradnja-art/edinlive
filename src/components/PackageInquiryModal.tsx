@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X, ArrowRight, ArrowLeft, CheckCircle, Mail, Phone, MessageSquare, CreditCard } from 'lucide-react'
 import Image from 'next/image'
 import { playButtonSound } from '@/lib/sound'
-import { AircashIcon, RevolutIcon, WiseIcon, CryptoIcon } from './PaymentIcons'
+import { AircashIcon, RevolutIcon, WiseIcon, CryptoIcon, PayPalIcon } from './PaymentIcons'
 
 interface PackageInquiryModalProps {
   packageData: {
@@ -26,6 +26,7 @@ const paymentMethods = [
   { id: 'revolut', name: 'Revolut', Icon: RevolutIcon },
   { id: 'wise', name: 'Wise', Icon: WiseIcon },
   { id: 'crypto', name: 'Crypto', Icon: CryptoIcon },
+  { id: 'paypal', name: 'PayPal', Icon: PayPalIcon },
 ]
 
 export default function PackageInquiryModal({ packageData, onClose }: PackageInquiryModalProps) {
@@ -391,10 +392,10 @@ export default function PackageInquiryModal({ packageData, onClose }: PackageInq
                           setErrors((prev) => ({ ...prev, paymentMethod: '' }))
                         }
                       }}
-                      className={`p-6 glass-effect rounded-xl border-2 transition-all duration-300 hover:luxury-glow flex flex-col items-center justify-center ${
+                      className={`p-6 glass-effect rounded-xl border-2 transition-all duration-300 flex flex-col items-center justify-center ${
                         formData.paymentMethod === method.id
-                          ? 'border-luxury-gold bg-luxury-gold/20'
-                          : 'border-luxury-gold/20 hover:border-luxury-gold/40'
+                          ? 'border-luxury-gold bg-luxury-gold/20 luxury-glow shadow-lg shadow-luxury-gold/30'
+                          : 'border-luxury-gold/20 hover:border-luxury-gold/40 hover:luxury-glow'
                       }`}
                     >
                       <div className="w-12 h-12 mb-3 text-luxury-gold">

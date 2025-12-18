@@ -119,6 +119,7 @@ export function getPackageInquiryEmailTemplate(data: {
     'revolut': 'Revolut',
     'wise': 'Wise',
     'crypto': 'Crypto',
+    'paypal': 'PayPal',
   }
   
   const paymentMethodName = paymentMethodNames[data.paymentMethod.toLowerCase()] || data.paymentMethod
