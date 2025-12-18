@@ -1,0 +1,91 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Allow Facebook scrapers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: facebookcatalog
+Allow: /
+
+# Allow Twitter/X scrapers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Twitter
+Allow: /
+
+# Allow LinkedIn scrapers
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: LinkedIn
+Allow: /
+
+# Allow Instagram scrapers
+User-agent: Instagram
+Allow: /
+
+# Allow Pinterest scrapers
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
+# Allow WhatsApp scrapers
+User-agent: WhatsApp
+Allow: /
+
+# Allow Telegram scrapers
+User-agent: TelegramBot
+Allow: /
+
+# Allow Discord scrapers
+User-agent: Discordbot
+Allow: /
+
+# Allow Reddit scrapers
+User-agent: Redditbot
+Allow: /
+
+# Allow Snapchat scrapers
+User-agent: Snapchat
+Allow: /
+
+# Allow TikTok scrapers
+User-agent: TikTokBot
+Allow: /
+
+# Allow Google scrapers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+# Allow Bing scrapers
+User-agent: Bingbot
+Allow: /
+
+# Allow Yandex scrapers
+User-agent: Yandex
+Allow: /
+
+# Allow Baidu scrapers
+User-agent: Baiduspider
+Allow: /
+
+# Sitemap
+Sitemap: https://edin.live/sitemap.xml
+
